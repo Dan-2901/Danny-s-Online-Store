@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny's Store - Online Shopping</title>
+    <style>
+        body { margin:0; font-family: Arial, sans-serif; }
+        a { text-decoration: none; color: inherit; }
+        h1, h2, h3, p { margin:0; padding:0; }
+        img { max-width: 100%; }
+
+        /* Hero Section */
+        .hero { background-color:#ff6600; color:white; text-align:center; padding:80px 20px; }
+        .hero h1 { font-size:3rem; margin-bottom:20px; }
+        .hero p { font-size:1.2rem; margin-bottom:30px; }
+        .hero a { background-color:white; color:#ff6600; padding:12px 25px; border-radius:5px; font-weight:bold; }
+
+        /* Categories Section */
+        .categories { padding:40px 20px; text-align:center; background-color:#f8f8f8; }
+        .categories h2 { font-size:2rem; margin-bottom:30px; color:#333; }
+        .category-cards { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+        .category-card { width:180px; padding:20px; background-color:white; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+        .category-card img { width:100%; height:150px; object-fit:cover; border-radius:10px; }
+        .category-card p { margin-top:10px; font-weight:bold; color:#333; }
+
+        /* Products Section */
+        .products { padding:40px 20px; text-align:center; }
+        .products h2 { font-size:2rem; margin-bottom:30px; color:#333; }
+        .product-cards { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+        .product-card { width:200px; padding:15px; background-color:white; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+        .product-card img { width:100%; height:180px; object-fit:cover; border-radius:10px; }
+        .product-card h3 { font-size:1.1rem; margin:10px 0 5px 0; }
+        .product-card p { font-weight:bold; color:#ff6600; }
+
+        /* Payment Section */
+        .payment { padding:40px 20px; text-align:center; background-color:#f8f8f8; }
+        .payment h2 { font-size:2rem; margin-bottom:30px; color:#333; }
+        .payment-methods { display:flex; justify-content:center; flex-wrap:wrap; gap:30px; }
+        .payment-method img { width:80px; height:auto; }
+
+        /* Footer */
+        footer { background-color:#333; color:white; text-align:center; padding:30px 10px; margin-top:40px; }
+        footer p { margin:5px 0; font-size:0.9rem; }
+
+        /* Responsive */
+        @media(max-width:768px){
+            .category-cards, .product-cards, .payment-methods { flex-direction:column; align-items:center; }
+            .category-card, .product-card { width:80%; }
+        }
+    </style>
+    </head>
+   <!-- Centered Logo Header -->
+<header style="background-color:#ff6600; padding:5px 0; text-align:center; margin:0;">
+    <img src="image/logo.png" alt="LOGO" style="height: 120px; width: 120px; display:inline-block; margin:0; padding:0;">
+    <!-- Store Name -->
+</header>
+<body>
+<!-- Hero Section -->
+<section class="hero" style="margin-top:0;">
+    <h1>Welcome to Danny's Store!</h1>
+    <p>Your one-stop shop for Men, Women, Kids, and Sports products. Shop securely and enjoy fast delivery!</p>
+    <a href="#categories">Shop Now</a>
+</section>
+<!-- Navigation Bar -->
+<header style="background:#333; padding:15px; position:sticky; top:0; z-index:1000;">
+    <nav style="display:flex; justify-content:space-between; align-items:center; color:white; max-width:1200px; margin:auto;">
+        <div style="font-size:1.5rem; font-weight:bold;">Danny's Store</div>
+        <div>
+            <a href="#categories" style="margin:0 15px; color:white;">Categories</a>
+            <a href="#products" style="margin:0 15px; color:white;">Products</a>
+            <a href="#payment" style="margin:0 15px; color:white;">Payment</a>
+            <a href="#contact" style="margin:0 15px; color:white;">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Categories Section -->
+<section class="categories" id="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-cards">
+        <a href="#men">
+            <div class="category-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeybpoMHQg2s954yaHp_ZPvBEVVBwR0pU3HQ&s" alt="Men">
+                <p>Men</p>
+            </div>
+        </a>
+        <a href="#women">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?fit=crop&w=300&h=200" alt="Women">
+                <p>Women</p>
+            </div>
+        </a>
+        <a href="#kids">
+            <div class="category-card">
+                <img src="https://kangarookidsonline.com/cdn/shop/collections/KK_-_Featured_Image_-_Zara_Kids.png?v=1687534235&width=2048" alt="Kids">
+                <p>Kids</p>
+            </div>
+        </a>
+        <a href="#sports">
+            <div class="category-card">
+                <img src="https://www.mayoornoida.net//public/admin/assets/images/blog/banner/desktop/1746619106-WhatsApp%20Image%202025-05-07%20at%2016.47.14.jpeg" alt="Sports">
+                <p>Sports</p>
+            </div>
+        </a>
+        <a href="#Electronics">
+            <div class="category-card">
+                <img src="https://img.freepik.com/premium-photo/assortment-tech-gadgets-arranged-neat-pattern-orange-background_960396-861664.jpg" alt="Electronics">
+                <p>Electronics</p>
+            </div>
+        </a>
+       <a href="#Home">
+            <div class="category-card">
+                <img src="https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/4:3/w_1439,h_1079,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg" alt="Home">
+                <p>Home</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Sample Products Section -->
+<section class="products" id="products">
+    <h2>Featured Products</h2>
+    <div class="product-cards">
+        <div class="product-card">
+            <img src="https://printnew.in/wp-content/uploads/2020/01/1-11-scaled.jpg" alt="Product 1">
+            <h3>Men's T-Shirt</h3>
+            <p>Save upto 50%</p>
+        </div>
+        <div class="product-card">
+            <img src="https://www.yourprint.in/new-admin-ajax.php?action=resize_outer_image&cfcache=all&url=med-s3/d-i-o/Tshirts/Women/tshirt_hs_women_pat_d41_o.jpg&resizeTo=600" alt="Product 2">
+            <h3>Women's Dress</h3>
+            <p>Save upto 50%</p>
+        </div>
+        <div class="product-card">
+            <img src="https://t3.ftcdn.net/jpg/01/27/13/16/360_F_127131690_Q5FeoTAP1e71xk3Pw49swKgK63yboTD4.jpg" alt="Product 3">
+            <h3>Kids Shoes</h3>
+            <p>Save Upto 50%</p>
+        </div>
+        <div class="product-card">
+            <img src="https://storage.googleapis.com/treatspace-prod-media/pracimg/u-2236/shutterstock_2085430438.jpeg" alt="Product 4">
+            <h3>Sports Gear</h3>
+            <p>Save upto 50%</p>
+        </div>
+    </div>
+</section>
+
+<!-- Payment Methods Section -->
+<section class="payment" id="payment">
+    <h2>Payment Methods</h2>
+    <div class="payment-methods">
+        <div class="payment-method">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1200px-Visa.svg.png" alt="Visa">
+        </div>
+        <div class="payment-method">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard">
+        </div>
+        <div class="payment-method">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png" alt="PayPal">
+        </div>
+        <div class="payment-method">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968601.png" alt="ApplePay">
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" style="padding:40px 20px; text-align:center; background:#f1f1f1;">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to us anytime!</p>
+    <p><strong>Phone:</strong> +91 7350272974</p>
+    <p><strong>Email:</strong> dsayed2901@gmail.com</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Danny's Store. All Rights Reserved.</p>
+    <p>Contact: +91 7350272974 | Email: dsayed2901@gmail.com</p>
+</footer>
+
+</body>
+</html>
